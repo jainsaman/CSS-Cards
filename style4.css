@@ -249,6 +249,7 @@ button a{
 }
 .card3:hover .card3-front{
     transform: translateY(0);
+    transform: translateX(0);
 }
 .card3-back{
     position: relative;
