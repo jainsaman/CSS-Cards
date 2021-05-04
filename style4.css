@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: gainsboro;
+}
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 70px;
+    color: whitesmoke;
+    align-items: center;
+    font-size: 45px;
+    width: 100%;
+    height: 70px;
+    font-family: Girassol;
+    font-weight: 500;
+    text-shadow: 0px 0px 8px yellow, 3px 3px 0px red;
+    /*top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;*/
+}
+.navtext li{
+    list-style: none;
+    padding: 0px 10px;
+    text-shadow: none;
+}
+.navtext{
+    display: flex;
+    justify-content: space-between;
+    font-family: Georgia;
+    font-size: 25px;
+    border: 3px solid grey;
+    border-radius: 50px;
+    padding: 10px;
+}
+.navtext a:link{
+    color: cyan ;
+    text-decoration: none;
+}
+.navtext a:visited{
+    color: cyan;
+    text-decoration: none;
+}
+.navtext a:hover{
+    color: violet;
+    text-decoration: underline;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    font-family: Acme;
+    font-size: 30px;
+    color: black;
+    text-align: justify;
+    height: 100vh;
+}
+.about p{
+    font-family: Impact;
+    font-size: 70px;
+    color: blue;
+    align-items: center;
+}
+.about img{
+    width: 400px;
+    height: 400px;
+    border-radius: none;
+    border: none;
+}
+.products1{
+    font-family: Impact;
+    font-size: 50px;
+    color: darkslategray;
+    align-items: center;
+    padding-left: 100px;
+    height: 20vh;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+.card1{
+    border: 1px double black;
+    border-radius: 15px;
+    max-width: 550px;
+    text-align: center;
+}
+.card1:hover{
+    box-shadow: 0px 6px 8px 2px black;
+}
+h1{
+    font-family: Lobster;
+    font-weight: 550;
+}
+.info img{
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 8px 2px darkslategray;
+}
+img{
+    border: 2px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+}
+.price{
+    font-family: "Orelega One";
+    font-size: 35px;
+    font-weight: 400;
+    color: blue;
+}
+p{
+    font-family: "Dancing Script";
+    font-size: 25px;
+    font-weight: bold;
+}
+button{
+    border: 2px double black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    background-color: darkslategray;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Georgia;
+    padding: 10px;
+}
+button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    height: 100vh;
+    font-family: Langar;
+}
+.info2{
+    box-shadow: 0px 0px 5px 2px black;
+    background: transparent;
+    padding: 30px;
+    /*border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;*/
+}
+.info2 p{
+    font-family: Merriweather;
+    font-weight: 900;
+    font-size: 40px;
+    font-style: italic;
+}
+.info2:hover{
+    outline: 5px solid black;
+    outline-offset: -8px;
+    transition: all 200ms ease-in-out;
+}
+.card2{
+    width: 450px;
+    height: 500px;
+    background-color: transparent;
+    perspective: 1000px;
+}
+.card2-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card2:hover .card2-inner{
+    transform: rotateY(180deg);
+}
+.card2-front , .card2-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.card2-back{
+    transform: rotateY(180deg);
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.third{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    padding-top: 200px;
+    height: 100vh;
+}.third-info{
+    border: 3px double black;
+    border-radius: 10px;
+    height: 350px;
+    width: 350px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Georgia;
+    font-size: 25px;
+}
+.card3{
+    position: relative;
+    cursor: pointer;
+}
+.card3-front , .card3-back{
+    width: 300px;
+    height: 350px;
+    transition: 0.5s;
+}
+.card3-front{
+    position: relative;
+    z-index: 1;
+    transform: translateY(175px);
+}
+.card3-front img{
+    width: 300px;
+    height: 350px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.card3:hover .card3-front{
+    transform: translateY(0);
+}
+.card3-back{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 175px;
+    box-sizing: border-box;
+    transform: translateY(-175px);
+}
+.card3:hover .card3-back{
+    background-color: black;
+    color: cornsilk;
+    box-shadow: 0px 5px 15px 2px #ff0000;
+}
+.card3-back .price{
+    color: #0099ff;
+}
+.card3-back button{
+    width: 75%;
+    border-radius: 10px;
+    border: 2px double gray;
+}
