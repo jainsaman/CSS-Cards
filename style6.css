@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+}
+.message img{
+    height: 100vh;
+    width: 100%;
+    filter: blur(3px);
+    opacity: 0.8;
+    position: fixed;
+    border: none;
+    border-radius: none;
+    z-index: -1;
+}
+.message p{
+    text-align: center;
+    font-family: Georgia;
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 0px 2px 5px red;
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 50vh;
+    width: 600px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
